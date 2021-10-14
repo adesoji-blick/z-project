@@ -178,5 +178,5 @@ variable "rt_cidr_block" {
 }
 
 variable "db_password" {
-  default = "devops"
+  default = "db-password"
 }
