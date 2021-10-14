@@ -45,8 +45,8 @@ resource "aws_instance" "web-server" {
   key_name      = var.ssh_key
   instance_type = var.instance_type
   # iam_instance_profile = aws_iam_instance_profile.access_profile.name
-  security_groups = [aws_security_group.webserver_sg.id]
-  subnet_id       = aws_subnet.public_subnet[count.index].id
+  security_groups      = [aws_security_group.webserver_sg.id]
+  subnet_id            = aws_subnet.public_subnet[count.index].id
   # iam_instance_profile = var.iam_role
 
   tags = {
