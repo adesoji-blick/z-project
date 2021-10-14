@@ -1,0 +1,5 @@
+node_type: Prometheus/Grafana Monitoring
+node_env: Project
+
+packages_to_install:
+  - docker

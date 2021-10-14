@@ -1,0 +1,5 @@
+node_type: Ansible Tool
+node_env: Project
+
+packages_to_install:
+  - docker
