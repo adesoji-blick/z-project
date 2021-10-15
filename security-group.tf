@@ -20,6 +20,13 @@ resource "aws_security_group" "ansible_sg" {
     cidr_blocks = var.sg_cidr_block
   }
 
+  ingress {
+    from_port   = var.httpport6
+    to_port     = var.httpport6
+    protocol    = var.ingress_protocol
+    cidr_blocks = var.sg_cidr_block
+  }
+  
   tags = {
     Name = "${var.sg_name}"
   }
@@ -41,6 +48,13 @@ resource "aws_security_group" "webserver_sg" {
   ingress {
     from_port   = var.httpport2
     to_port     = var.httpport2
+    protocol    = var.ingress_protocol
+    cidr_blocks = var.sg_cidr_block
+  }
+
+  ingress {
+    from_port   = var.httpport6
+    to_port     = var.httpport6
     protocol    = var.ingress_protocol
     cidr_blocks = var.sg_cidr_block
   }
@@ -80,6 +94,13 @@ resource "aws_security_group" "monitor_sg" {
   ingress {
     from_port   = var.httpport4
     to_port     = var.httpport4
+    protocol    = var.ingress_protocol
+    cidr_blocks = var.sg_cidr_block
+  }
+
+  ingress {
+    from_port   = var.httpport6
+    to_port     = var.httpport6
     protocol    = var.ingress_protocol
     cidr_blocks = var.sg_cidr_block
   }

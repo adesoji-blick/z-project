@@ -116,7 +116,34 @@
       "artifact_id": "ca-central-1:ami-0b44ddb2b8782b001",
       "packer_run_uuid": "07e6cb70-d160-a68d-3a06-8dfe9494cf72",
       "custom_data": null
+    },
+    {
+      "name": "ansible",
+      "builder_type": "amazon-ebs",
+      "build_time": 1634315924,
+      "files": null,
+      "artifact_id": "ca-central-1:ami-0ff7990f0c282626a",
+      "packer_run_uuid": "2234f7d9-3a03-6ed7-ab62-4456787d193c",
+      "custom_data": null
+    },
+    {
+      "name": "server",
+      "builder_type": "amazon-ebs",
+      "build_time": 1634315998,
+      "files": null,
+      "artifact_id": "ca-central-1:ami-0ac0bb782c147afd0",
+      "packer_run_uuid": "2234f7d9-3a03-6ed7-ab62-4456787d193c",
+      "custom_data": null
+    },
+    {
+      "name": "prometheus",
+      "builder_type": "amazon-ebs",
+      "build_time": 1634316021,
+      "files": null,
+      "artifact_id": "ca-central-1:ami-028a907009d87a409",
+      "packer_run_uuid": "2234f7d9-3a03-6ed7-ab62-4456787d193c",
+      "custom_data": null
     }
   ],
-  "last_run_uuid": "07e6cb70-d160-a68d-3a06-8dfe9494cf72"
+  "last_run_uuid": "2234f7d9-3a03-6ed7-ab62-4456787d193c"
 }

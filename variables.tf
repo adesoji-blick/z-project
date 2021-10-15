@@ -120,6 +120,10 @@ variable "httpport5" {
   default = "3306"
 }
 
+variable "httpport6" {
+  default = "9100"
+}
+
 # variable "port_id" {
 #   default = ["80", "80", "8080"]
 # }
